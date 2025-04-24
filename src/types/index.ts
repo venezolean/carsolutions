@@ -33,10 +33,27 @@ export interface CarouselSlide {
   subtitle: string;
 }
 
-export interface FilterOptions {
-  brand: string[];
-  minPrice: number;
-  maxPrice: number;
-  condition: string;
-  year: number[];
+export interface Config {
+  site: {
+    name: string;
+    phone: string;
+    email: string;
+    address: string;
+    city: string;
+    country: string;
+    whatsapp: string;
+    description: string;
+    years_experience: number;
+    business_hours: {
+      weekdays: string;
+      saturday: string;
+      sunday: string;
+    };
+    social: {
+      facebook: string;
+      instagram: string;
+      twitter: string;
+      linkedin: string;
+    };
+  };
 }

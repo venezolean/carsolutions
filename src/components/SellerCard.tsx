@@ -36,4 +36,4 @@ const SellerCard: React.FC<SellerCardProps> = ({ seller }) => {
   );
 };
 
-export default SellerCard;
+export default SellerCard
