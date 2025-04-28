@@ -79,7 +79,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ vehicleId, vehicleModel }) =>
             phone: formData.phone,
             email: formData.email,
             message: formData.message,
-            vehicle_id: formData.vehicleId || formData.selectedModel,
+            vehicle_id: formData.vehicleId || formData.selectedModel || null,
             consultation_type: formData.consultationType,
             sub_type: formData.subType
           }
