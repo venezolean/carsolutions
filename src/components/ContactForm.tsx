@@ -28,6 +28,8 @@ const informationSubTypes: InformationSubType[] = [
   { id: 'other', label: 'Otros' }
 ];
 
+const infoRequestVehicleId = 'c8428e9d-15cf-490f-bfe3-e6960cbd89db';
+
 const ContactForm: React.FC<ContactFormProps> = ({ vehicleId, vehicleModel }) => {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -79,7 +81,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ vehicleId, vehicleModel }) =>
             phone: formData.phone,
             email: formData.email,
             message: formData.message,
-            vehicle_id: formData.vehicleId || formData.selectedModel || null,
+            vehicle_id: formData.vehicleId || formData.selectedModel || infoRequestVehicleId,
             consultation_type: formData.consultationType,
             sub_type: formData.subType
           }
